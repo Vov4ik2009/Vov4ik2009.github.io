@@ -1,0 +1,52 @@
+body{
+   margin:0;
+   padding:0;
+   background-color:blue;
+   color: white;
+}
+header{
+	padding:10px;
+	background:linear-gradient(to right, white, blue)
+}
+a{
+	text-decoration:none;
+	font-size:20px;
+	margin-left:5px;
+	color:#4b2080;
+}
+a:hover{
+	color: red;
+	
+}
+input:focus{
+	border: 2px solid red;
+	
+}
+input:valid{
+	background: lightgreen;
+	
+}
+input[type=submit]{
+	padding:5px;
+	background:linear-gradient(to right, firebrick, red); 
+	border:none;
+	color: white;
+}
+input[type=text], input[type=number], input[type=email]{
+	height:30PX;
+	
+	
+}
+input[type=submit]:hover{
+	background:linear-gradient(to right, white, blue);
+	color:red;
+}
+input[type=reset]{
+background:linear-gradient(to right, firebrick, red);
+border:none;
+color: white;	
+}
+input[type=reset]:hover{
+background:linear-gradient(to right, white, blue);
+	color:red;	
+}
