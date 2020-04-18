@@ -1,0 +1,12 @@
+body{
+	background: linear-gradient(to right, gray, white, silver);
+	font-family: 'Baloo Bhaina 2', cursive;
+}
+h1{
+	font-size: 26pt;
+	
+}
+p{
+	padding: 0 100px;
+	font-size: 14pt;
+}
