@@ -1,0 +1,48 @@
+body{
+background: linear-gradient(to right, white, blue) ;
+    font-family: 'Baloo Bhaina 2', cursive;
+	font-size:20pt;
+}
+ .menu{
+	      background-color:black;
+		  border-radius:13px;
+		  box-shadow: 0px 0px 20px blue;
+		  color:white;
+		  padding: 20px;
+	 }
+	 	 .knopka1{
+	  border: 2px solid whitesmoke;
+	  box-shadow: 0px 0px 10px silver;
+	  border-radius:13px;
+	  padding: 8px;
+	  color:whitesmoke;
+	  font-family: 'Merriweather', serif;
+	  text-decoration:none;
+	 }
+	 .knopka2{
+	  border: 2px solid whitesmoke;
+	  box-shadow: 0px 0px 10px silver;
+	  border-radius:13px;
+	  padding: 8px;
+	  color:whitesmoke;
+	  font-family: 'Merriweather', serif;
+	  text-decoration:none;
+	 }
+      .knopka3{
+	  border: 2px solid whitesmoke;
+	  box-shadow: 0px 0px 10px silver;
+	  border-radius:13px;
+	  padding: 8px;
+	  color:whitesmoke;
+	  font-family: 'Merriweather', serif;
+	  text-decoration:none;
+	 }
+	  .knopka4{
+	  border: 2px solid whitesmoke;
+	  box-shadow: 0px 0px 10px silver;
+	  border-radius:13px;
+	  padding: 8px;
+	  color:whitesmoke;
+	  font-family: 'Merriweather', serif;
+	  text-decoration:none;
+	 }
