@@ -1,0 +1,95 @@
+body{background: black;}
+.circle{ /* цифри */
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border: 4px solid whitesmoke;
+	border-radius: 50%;
+}
+.twelve, .three, .six, .nine { /* Цифри на циферблаті*/
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	color: #48d1cc;
+}
+.twelve {
+	top: 3px;
+	left: 41px;
+}
+
+.three {
+	top: 43px;
+	left: 85px;
+}
+
+.six {
+	top: 78px;
+	left: 44px;
+}
+.nine {
+	top: 43px;
+	left: 5px;
+}
+
+.sec{
+	position: absolute;
+	width: 2px;
+	height: 45px;
+	background: white;
+	top: 4px;
+	left: 51px;
+	
+	animation: anim1 60s infinite steps(60);
+	transform-origin: 0 45px;
+}
+@keyframes anim1{
+	100%{transform: rotate(360deg);}
+}	
+.min{
+	position: absolute;
+	width: 3px;
+	height: 35px;
+	background: yellow;
+	top: 16px;
+	left: 51px;
+	
+	animation: anim2 3600s infinite steps(3600);
+	transform-origin: 0 35px;
+}
+@keyframes anim2{
+	100%{transform: rotate(360deg);}
+}
+.hour{
+	position: absolute;
+	width: 4px;
+	height: 28px;
+	background: red;
+	top: 20px;
+	left: 50px;
+	animation: anim3 43200s infinite steps(43200);
+	transform-origin: 0 28px;
+}
+.center{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #48d1cc;
+	top: 42px;
+	left: 44px;
+}
+.metronom{
+	width: 2px;
+	height: 85px;
+	margin-top: 100px;
+	background: silver;
+	position: absolute;
+	left: calc(50% - 1px);
+	animation: metronom 1.5s ease-in-out infinite;
+}
+@keyframes metronom{
+	0%{transform: rotate(45deg);}
+	50%{transform: rotate(-45deg);}
+	100%{transform: rotate(45deg);}
+}
+
