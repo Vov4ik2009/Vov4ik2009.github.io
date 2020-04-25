@@ -83,6 +83,7 @@ input[type=text]{
 	color: navy;
 	font-size: 22pt;
 	margin-left: 10px;
+	font-family: 'Cuprum', sans-serif;
 }
 ul>a{
 	text-decoration: none;
