@@ -1,41 +1,41 @@
 body{
-   margin:0;
-   padding:0;
+	margin: 0;
+	padding: 0;
 }
 .menu{
-	background:black;
-	padding:10px;
+	background: black;
+	padding: 10px;
 	display: flex;
 	justify-content: flex-end;
 }
 .menu>a{
-   text-decoration: none;
-   color: white;
-   font-family: 'Cuprum', sans-serif;
-   font-size:20px;
-   margin-right: 15px;
+	text-decoration: none;
+	color: white;
+	font-size: 20pt;
+	font-family: 'Cuprum', sans-serif;
+	margin-right: 15px;
 }
 .header{
 	background-image: url(back.jpg);
-	height:250px;
+	height: 250px;
 	background-size: 100%;
 }
 .header-text{
 	background:black;
-	height:100%;
+	height: 100%;
 	opacity: 0.8;
 	color: white;
-	display:flex;
+	display: flex;
 	justify-content: space-between;
-	align-items:center;
+	align-items: center;
 	padding: 0 50px;
 	font-family: 'Pacifico', cursive;
 }
 .header-left{
-	font-size:35pt;		
+	font-size: 35pt;
 }
 .header-right{
-	font-size:18pt;	
+	font-size: 18pt;
 }
 .main{
 	display: flex;
@@ -48,18 +48,16 @@ body{
 .main-right{
 	background: lightgray;
 	width: 35%;
-	
 }
 article>h1{
 	font-family: 'Cuprum', sans-serif;
 	color: navy;
-	background:lightgray;
-	padding:10px;
+	background: lightgray;
+	padding: 10px;
 	font-size: 20pt;
 }
 article>p{
-	font-size:16pt;	
-	
+	font-size: 16pt;
 }
 .search{
 	padding: 20px;
@@ -97,3 +95,11 @@ ul>a:hover{
 .search>a:hover{
 	background: navy;
 }
+
+
+
+
+
+
+
+
