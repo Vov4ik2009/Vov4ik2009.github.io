@@ -73,10 +73,14 @@ footer{
 	transform: scale(1.1);
 }
 .search{
+	position: relative;
 	display:flex;
 	height:300px;
 	align-items:center;
 	margin-left:100px;
+}
+.search label{
+	position: absolute;
 }
 input[type='text']{
 	width:300px;
