@@ -72,8 +72,6 @@ footer{
 	display:block;
 	width:25%;
 	border-left: 2px solid black;
-}
-.aside>p{
 	color:black;
 }
 #photo{
@@ -89,6 +87,7 @@ footer{
 	height:300px;
 	align-items:center;
 	margin-left:100px;
+	
 }
 input[type='text']{
 	width:300px;
