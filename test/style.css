@@ -48,7 +48,7 @@ li>p{
 }
 footer{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding:13px 5px;
 	font-size: 15px;
 	font-family: Tahoma;
@@ -108,9 +108,10 @@ input[type='text']{
 input[type='submit']{
 	height:40px;
 	width:150px;
-	background-color:red;
-	border-radius:10px;
+	background-color:blue;
+	color:white;
+	border:none;
 }
 input[type='submit']:hover{
-	background-color:blue;
+	background-color:red;
 }
