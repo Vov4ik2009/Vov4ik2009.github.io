@@ -72,9 +72,14 @@ footer{
 	display:block;
 	width:25%;
 	border-left: 2px solid black;
+	
 }
 .aside a{
-	color:black;
+	display:flex;
+	color:black;justify-content:center;
+}
+.aside a:hover{
+	color:red;
 }
 #photo{
 	width: 22%;
@@ -87,7 +92,7 @@ footer{
 .search{
 	display:flex;
 	height:300px;
-	align-items:center;
+	align-items:flex-end;
 	margin-left:100px;
 }
 input[type='text']{
