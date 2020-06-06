@@ -1,0 +1,96 @@
+body{
+	padding:0;
+	margin:0;
+	font-family: Tahoma;	
+}
+a{
+	text-decoration:none;
+	color:white;
+	margin-right:50px;
+}
+.menu{
+
+	height: 80px;
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+	background: linear-gradient(#ffbb00, #ffbb00);
+}
+.menu>img{
+	margin-left:50px;
+	height:80px;
+}
+nav>a:hover{
+	color:blue
+}
+.banner{
+    display:flex;	
+    height:441px;
+	background-color:lightgray;
+	justify-content: center;
+}
+.banner>img{
+	height:441px;
+	width:847px;
+}
+p{
+	font-family:Tenali Ramakrishna;
+	font-size:20px;
+}
+li{
+	font-size:35px;
+}
+ol{
+	margin-left:75px;
+}
+li>p{
+	font-size:27px;
+}
+footer{
+	display: flex;
+	justify-content: space-between;
+	padding:13px 5px;
+	font-size: 15px;
+	font-family: Tahoma;
+	background: lightgray;
+	align-items:center;
+}
+.inst{
+	height:80px;
+}
+.main1>img{
+	height:500px;
+}
+.main1{
+	color:black;
+}
+#photo{
+	width: 22%;
+	padding-left: 1.5%;
+	transition: transform 0.5s ease;
+}
+#photo:hover{
+	transform: scale(1.1);
+}
+.search{
+	display:flex;
+	height:300px;
+	align-items:center;
+	margin-left:100px;
+}
+input[type='text']{
+	width:300px;
+	height:30px;
+    border-radius:5px;
+	border: 2px solid black;
+	margin-right:30px;
+}
+input[type='submit']{
+	height:40px;
+	width:150px;
+	background-color:red;
+	border-radius:10px;
+}
+input[type='submit']:hover{
+	background-color:blue;
+}
