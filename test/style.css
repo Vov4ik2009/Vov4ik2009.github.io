@@ -80,6 +80,7 @@ footer{
 .aside a{
 	display:flex;
 	color:black;justify-content:center;
+	margin-top:30px;
 }
 .aside a:hover{
 	color:red;
