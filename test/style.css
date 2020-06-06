@@ -62,6 +62,18 @@ footer{
 	height:500px;
 }
 .main1{
+	display:flex;
+	color:black;
+}
+.books{
+	width:75%;
+}
+.aside{
+	display:block;
+	width:25%;
+	border-left: 2px solid black;
+}
+.aside>p{
 	color:black;
 }
 #photo{
@@ -73,14 +85,10 @@ footer{
 	transform: scale(1.1);
 }
 .search{
-	position: relative;
 	display:flex;
 	height:300px;
 	align-items:center;
 	margin-left:100px;
-}
-.search label{
-	position: absolute;
 }
 input[type='text']{
 	width:300px;
