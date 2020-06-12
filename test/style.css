@@ -43,8 +43,12 @@ li{
 ol{
 	margin-left:75px;
 }
+.main{
+	font-family: 'Balsamiq Sans', cursive;
+}
 li>p{
 	font-size:15px;
+	font-family: 'Balsamiq Sans', cursive;
 }
 footer{
 	display: flex;
@@ -56,10 +60,13 @@ footer{
 	align-items:center;
 }
 .inst{
-	height:80px;
+	height:50px;
 }
 .git{
-	height:80px;
+	height:50px;
+}
+.fb{
+	height:50px;
 }
 .main1>img{
 	height:500px;
@@ -72,18 +79,8 @@ footer{
 	width:75%;
 }
 .aside{
-	display:block;
 	width:25%;
 	border-left: 2px solid black;
-	
-}
-.aside a{
-	display:flex;
-	color:black;justify-content:center;
-	margin-top:30px;
-}
-.aside a:hover{
-	color:red;
 }
 #photo{
 	width: 22%;
@@ -102,9 +99,9 @@ footer{
 input[type='text']{
 	width:300px;
 	height:30px;
-    border-radius:5px;
 	border: 2px solid black;
 	margin-right:30px;
+	padding-left:10px;
 }
 input[type='submit']{
 	height:40px;
@@ -115,4 +112,10 @@ input[type='submit']{
 }
 input[type='submit']:hover{
 	background-color:red;
+}
+.knopku{
+	margin-top:100px;
+}
+.aside2{
+	margin-left:10px;
 }
