@@ -119,3 +119,8 @@ input[type='submit']:hover{
 .aside2{
 	margin-left:10px;
 }
+.ramka{
+	border-left:2px solid black;
+	border-right:2px solid black;
+	padding:0px 20px;
+}
