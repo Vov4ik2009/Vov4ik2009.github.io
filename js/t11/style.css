@@ -1,0 +1,29 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	color:navy;
+	background-color:#d0d7d9;
+}
+.month{
+	width:770px;
+	display:flex;
+	flex-wrap:wrap;
+	background-color:lightgray;
+	margin: 0 auto;
+}
+.day{
+	display:flex;
+	width:100px;
+	height:100px;
+	background:lime;
+	justify-content: center;
+	align-items:center;
+	border-radius: 6px;
+	text-align:center;
+	box-shadow: 2px 2px 5px #0b6902;
+	margin: 4px;
+}
+.gray{
+	background:gray;
+}
