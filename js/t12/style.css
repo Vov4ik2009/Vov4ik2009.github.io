@@ -1,0 +1,26 @@
+body{
+	margin:0;
+	padding:0;
+    font-family: sans-serif;
+}
+
+table{
+	width: 800px;
+	margin: 0 auto;
+}
+
+th,td{
+	border: 1px solid black;
+}
+
+.num{
+	width:50px;
+}
+
+.letter{
+	width:120px;
+	text-align:center;
+}
+.gray{
+	background-color: #ddd;
+}
