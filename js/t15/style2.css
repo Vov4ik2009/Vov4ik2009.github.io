@@ -1,0 +1,18 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+h2{
+	font-size: 30px;
+}
+table{
+	border-spacing: 0px;
+	width: 800px;
+	margin: 50px auto;
+}
+
+th, td{
+	border: 1px solid gray;
+	padding: 18px 8px;
+}
