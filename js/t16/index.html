@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тема 16. Завдання 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<div class="sidebar">
+			<div class="form">
+				<h3 align="center">Форма замовлення</h3>
+				<div>
+					<label>Ім'я замовника</label>
+					<input id="client_name" type="text">
+				</div>
+				<div>
+					<label>Телефон замовника</label>
+					<input id="client_phone" type="text">
+				</div>
+				<div>
+					<label>Назва товару</label>
+					<input id="order_name" type="text">
+				</div>
+				<div>
+					<label>Ціна товару</label>
+					<input id="order_price" type="number" min="0" class="form_price">
+				</div>
+				<div class="form_check">
+					<input id="order_status" type="checkbox" >
+					<label class="form_check_lable">Замовення підтверджено</label>
+				</div>
+				<div>
+					<button class="order_btn" onclick="addOrder()">Додати замовлення</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<h2 align="center">Список замовлень</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>№</th>
+						<th>Замовник</th>
+						<th>Телефон</th>
+						<th>Товар</th>
+						<th>Ціна</th>
+						<th>Виконано</th>
+						<th>Видалити</th>
+					</tr>
+				</thead>
+				
+				<tbody id="orders_table">
+					<tr>
+						<td>1</td>
+						<td>Дмитро Іванов</td>
+						<td>+3809781240</td>
+						<td>Iphone X</td>
+						<td class="centered">520$</td>
+						<td class="centered"><input type="checkbox" checked></td>
+						<td class="centered"><button class="del_btn">Видалити</button></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Тетяня Микитенко</td>
+						<td>+3809646712</td>
+						<td>Клавіатура</td>
+						<td class="centered">60$</td>
+						<td class="centered"><input type="checkbox"></td>
+						<td class="centered"><button class="del_btn">Видалити</button></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Андірй Тарасенко</td>
+						<td>+3809641412</td>
+						<td>Телефон Samsung</td>
+						<td class="centered">360$</td>
+						<td class="centered"><input type="checkbox" checked></td>
+						<td class="centered"><button class="del_btn">Видалити</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<script src="z1.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body{
+			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.wrapper{
+			max-width: 1200px;
+			display: flex;
+			margin: 0 auto;
+		}
+		.sidebar{
+			color: white;
+			box-sizing: border-box;
+			width: 30%;
+			background: #1f479c;
+			padding: 10px 20px;
+			min-height: 100vh;
+			border-radius: 20px 0 0 0;
+		}
+		.form>div{
+			display: flex;
+			flex-direction: column;
+		}
+		.form div{
+			margin-bottom: 14px;
+		}
+		.form div label{
+			font-size: 18px;
+			margin: 4px 0;
+		}
+		.form div input{
+			height: 28px;
+			border-radius: 0px;
+			border: 2px solid gray;
+		}
+		.form_check{
+			flex-direction: row !important;
+			align-items: center;
+		}
+		.form_check_lable{ margin-left: 10px;}
+		.form_price{ max-width: 110px;}
+		.order_btn{
+			background: #c99400;
+			border: none;
+			padding: 16px;
+			font-size: 20px;
+			color:white;
+			border-radius: 5px;
+			font-weight: 600;
+			cursor: pointer;
+		}
+		.order_btn:hover{
+			opacity: 0.9;
+		}
+		
+		.content{
+			box-sizing: border-box;
+			background: #c1d3f5;
+			border-radius: 0 20px 0 0;
+			min-height: 100vh;
+			width: 70%;
+		}
+		table{
+			margin: 0 auto;
+			min-width: 94%;
+			border-spacing: 0px;
+		}
+		
+		tr:first-child td, th{
+			border-top: 1px solid black;
+		}
+		tr td:first-child, th:first-child{
+			border-left: 1px solid black;
+		}
+		tr td, th{
+			padding: 4px;
+			border-right: 1px solid black;
+			border-bottom: 1px solid black;
+		}
+		.centered{
+			text-align: center;
+			margin: 0 auto
+		}
+		th{
+			padding: 10px;
+		}
+		.del_btn{
+			background: red;
+			color: white;
+			border: 0;
+			padding: 6px 12px;
+			border-radius: 2px;
+			font-weight: 600;
+			cursor: pointer;
+		}
+		.del_btn:hover{
+			opacity: 0.8;
+		}
