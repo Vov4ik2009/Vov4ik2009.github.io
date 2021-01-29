@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Тема 17</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="content">
+	
+		
+			<div class="buttons">
+				<button onclick="changePricing('USD')">Вартість в доларах</button>
+				<button onclick="changePricing('UAH')">Вартість в гривнях</button>
+			</div>
+		
+			<div class="filter">
+				<input type="text" id="type_filter" placeholder="Введіть тип товару">
+				<button onclick="filterOrders()">Пошук</button>
+			</div>
+		
+		
+		<h2 align="center">Список куплених товарів за січень</h2>
+		
+		<h4 align="center" id="result"></h4>
+	
+		<table>
+			<thead>
+				<tr>
+					<th>№</th>
+					<th>Товар</th>
+					<th>Тип</th>
+					<th>Ціна</th>
+				</tr>
+			</thead>
+			
+			<tbody id="orders_table">
+				<tr>
+					<td>1</td>
+					<td>Монітор Sony 8764d</td>
+					<td>монітор</td>
+					<td>2100 грн</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<script src="z1.js"></script>
+</body>
+</html>
