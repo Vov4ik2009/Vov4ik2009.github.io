@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	margin: 0 auto;
+	width: 1040px;
+}
+.card{
+	margin: 50px 5px 0;
+	border: 1px solid gray;
+	width: 250px;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	border-radius: 5px;
+	padding: 20px 15px;
+	transition: transform 0.5s;
+	cursor: pointer;
+}
+.card:hover{
+	transform: scale(1.01);
+}
+.header{
+	min-height: 50px;
+}
+.action{
+	background: red;
+	padding: 8px 12px;
+	color: #fff;
+	display: inline-block;
+	border-radius: 20px;
+	font-weight: 800;
+}
+.card_image{
+	width: 76%;
+	margin: 0 auto;
+}
+.card_image img{
+	width: 100%;
+}
+.name{
+	font-weight: 600;
+	font-size: 18px;
+	padding: 10px 0;
+}
+.reviews{
+	color: navy;
+	padding: 10px 0;
+}
+.price{
+	font-weight: 600;
+	font-size: 22px;
+	padding: 10px 0;
+}
+.red{
+	color: red;
+}
+
+#all_products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
