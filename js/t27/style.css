@@ -1,0 +1,13 @@
+.red{
+    color: red;
+}
+.lime{
+    color: lime;
+}
+.orange{
+    color: orange;
+}
+.show{
+    display: block;
+    background: rgba(0, 0, 0, 0.397);
+}

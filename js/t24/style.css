@@ -1,0 +1,32 @@
+.sidebar{
+    border-right: 1px solid rgba(44, 42, 42, 0.308);
+    min-height: 100vh;
+}
+.card{
+    width: 16rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card-img-top{
+    max-width: 160px;
+    max-height: 300px;
+    margin: 10px auto 0;
+}
+.list-group-item, .price{
+    display: flex;
+    justify-content: space-between;
+}
+.list-group-item > b{
+    font-weight: 600!important;
+}
+.action{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 16px;
+    font-weight: 600;
+}

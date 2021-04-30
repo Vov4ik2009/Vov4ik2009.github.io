@@ -1,0 +1,25 @@
+
+.card{
+    width: 16rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card-img-top{
+	width: auto;
+    height: 250px;
+    margin: 10px auto 0;
+}
+.list-group-item, .price{
+    display: flex;
+    justify-content: space-between;
+}
+.list-group-item > b{
+    font-weight: 600!important;
+}
+.prod_in_card{
+    color: red;
+}
+.cart-img{
+    height: 100px;
+}

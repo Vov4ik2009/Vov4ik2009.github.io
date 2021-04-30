@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Тема 22</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h2 class="text-center my-5">Список користувачів</h2>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>№</th>
+					<th>Ім'я</th>
+					<th>Прізвище</th>
+					<th>Інформація</th>
+					<th>Видалити</th>
+				</tr>
+			</thead>
+
+			<tbody id="users_table">
+				<tr>
+					<td>1</td>
+					<td>Ольга Коваль</td>
+					<td>olgakoval@gmail.com</td>
+					<td>
+						<button class="btn btn-sm btn-primary">
+							Детально
+						</button>
+					</td>
+					<td>
+						<button class="btn btn-danger">Видалити</button>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Дмитро Іванишин</td>
+					<td>dina2001@gmail.com</td>
+					<td>
+						<button class="btn btn-sm btn-primary">
+							Детально
+						</button>
+					</td>
+					<td>
+						<button class="btn btn-danger">Видалити</button>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+	
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+		  <div class="modal-header text-center">
+			<h4>Повна інформація про користувача</h4>
+			<span class="close" onclick="hideModal()">&times;</span>
+		  </div>
+		  <div id="modal_body" class="modal-body py-3">
+			<p><b>Ім'я:</b> Олександр Ванів</p>
+			<p><b>Місто:</b> Львів</p>
+			<p><b>Email:</b> abc@example.com</p>
+			<p><b>Телефон:</b> 0984215215</p>
+			<p><b>Сайт:</b> hildegard.org</p>
+			<p><b>Компанія:</b> Romaguera-Crona</p>
+		  </div>
+		  <div id="modal_footer" class="modal-footer">
+			<button class="btn btn-sm btn-secondary" onclick="hideModal()">Скасувати</button>
+			<a class="btn btn-sm btn-success" href="https://www.google.com.ua/maps/@7.5981518,-74.8025844,13.12z">Показати на карті</a>
+			<a class="btn btn-sm btn-warning" href="mailto: abc@example.com">Написати email</a>
+		  </div>
+		</div>
+	</div>
+
+	<script src="array.js"></script>
+	<script src="z1.js"></script>
+</body>
+</html>

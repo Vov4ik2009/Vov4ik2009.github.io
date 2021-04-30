@@ -1,0 +1,31 @@
+.card{
+    width: 18rem;
+    height: 200px;
+    margin: 20px;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-num{
+    width: 200px;
+}
+.anim-card{
+   border: 2px solid red;   
+   color: red;
+   font-weight: 800;
+   animation: rotate ease 1.5s infinite;
+}
+@keyframes rotate{
+    0%{
+        transform : rotate(-2deg);
+    }
+    50%{
+        transform : rotate(4deg);
+    }
+    100%{
+        transform : rotate(-2deg); 
+    }
+}

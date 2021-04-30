@@ -1,0 +1,42 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.accordion{
+    max-width: 600px;
+    min-height: 200px;
+    margin: 40px auto;
+}
+.accordion_item{
+    margin-bottom: 4px;
+}
+.accordion_title{
+    background: gold;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.accordion_title:after{
+    content: "\27A4";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    transition: height 0.4s ease-in-out;
+}
+.isOpen .accordion_title:after{
+    transform: rotate(270deg);
+}
+.accordion_body{
+   height: 0;
+   overflow: hidden;
+   transition: height 0.4s ease-in-out;
+}
+.accordion_content{
+    background: #f1eeee;
+    padding: 15px;
+    margin-top: 4px;
+    border-radius: 4px;
+}
