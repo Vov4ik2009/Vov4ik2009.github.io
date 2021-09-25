@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src='https://www.gstatic.com/firebasejs/6.0.0/firebase.js'></script>
+    <script>  
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAJkhRGSq4j-7g9EJ6gwYjQ08s2CdMGOjA",
+            authDomain: "sl-volodya.firebaseapp.com",
+            projectId: "sl-volodya",
+            storageBucket: "sl-volodya.appspot.com",
+            messagingSenderId: "465667681668",
+            appId: "1:465667681668:web:dd2b6e3a2e276a5d5981d1",
+            measurementId: "G-044MS52412"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        
+        const db = firebase.firestore();
+    </script>
+   <script src="main.js"></script>
+</body>
+</html>
