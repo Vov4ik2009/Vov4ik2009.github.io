@@ -1,15 +1,18 @@
 const spiner = document.getElementById('spiner');
 const list = document.getElementById('list');
 const articles = [];
-
+let index=0;
 db.collection('articles').get().then(function(res){
 
      spiner.style.display = 'none';
+     
+     console.log(res.docs)
 
-     res.forEach( function(doc, index) {
+     res.forEach( function(doc) {
        const article = doc.data();
        articles.push(article);
        drawArticle(article, index)
+       index++
     });
 
     console.log(articles);
