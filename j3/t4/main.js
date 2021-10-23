@@ -85,4 +85,3 @@ function drawUser(user, num){
       row.id = user.id;
      users_table.appendChild(row);
 }
-
