@@ -6,5 +6,9 @@
 }
 
 .box-title{
+ padding: 10px;
+}
 
+.isActive{
+     fill: navy;
 }
