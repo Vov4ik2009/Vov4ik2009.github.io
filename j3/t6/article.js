@@ -80,3 +80,60 @@ function drawArticle(article) {
 function addLike() {
  
 }
+
+const user = JSON.parse( localStorage.getItem('user') )
+document.getElementById('user_comment_name').innerHTML =
+`
+Leave a comment as: <b>${user.name} ${user.lastName}</b>
+`
+function saveComment() {
+     const text = document.getElementById('comment_text').value
+
+     if(text == null || text == ""){
+          alert('Your comment is empty!!!!!!!!!!!!!!!!!!!!!!You are, so stuped');
+          return;
+
+     }
+     const comment ={
+          author: `${user.name} ${user.lastName}`,
+          article_id,
+          text: document.getElementById('comment_text').value
+     }
+     db.collection('comments').add(comment).then( res => {
+          alert('Your comment is the best!')
+          document.getElementById('comment_text').value = '';
+     } )
+
+     console.log(comment)
+     console.log('hallo');
+}
+function getAllComments() {
+     db.collection('comments').where('article_id', '==', article_id)
+     .get()
+     .then(res=>{
+          res.forEach(doc => {
+               drawComment(doc.data())
+          })
+})
+}
+function drawComment(comment) {
+     const old_comments = document.getElementById('old_comments')
+
+     const comment_box = document.createElement('div');
+
+     comment_box.classList.add('comment');
+     comment_box.classList.add('my-3')
+
+     const h5 = document.createElement('h5');
+     h5.innerText = comment.author;
+
+     const p = document.createElement('p');
+     p.innerText = comment.text;
+
+     comment_box.appendChild(h5);
+     comment_box.appendChild(p);
+
+     old_comments.appendChild(comment_box)
+
+}
+getAllComments();
