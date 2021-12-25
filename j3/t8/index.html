@@ -1,0 +1,69 @@
+
+        <html lang="en">
+            <head>
+                 <meta charset="UTF-8">
+                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                 <title>Document</title>
+                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            </head>
+            <body>
+                 <div class="container">
+                    <h1 class="text-center my-5">New order</h1>
+            
+                    <div class="row justify-content-center">
+                      <div class="col-10 col-sm-6">
+                          <div class="mb-3">
+                              <label class="form-label">User email</label>
+                              <input type="email" class="form-control" id="user_email" placeholder="name@example.com">
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label">Product name</label>
+                              <input type="text" class="form-control" id="product_name">
+                          </div>
+                          <div class="mb-3">
+                                <label class="form-label">Product price</label>
+                                <input type="number" class="form-control" id="product_price">
+                          </div>
+                           <div class="mb-3">
+                                <label class="form-label">Count</label>
+                                <input type="text" class="form-control" id="count">
+                           </div>
+                           <div class="mb-3">
+                                <label class="form-label">Delivery</label>
+                                <input class="form-control" list="datalistOptions" id="delivery" placeholder="Delivery...">
+                                     <datalist id="datalistOptions">
+                                     <option value="Нова Пошта">
+                                     <option value="Укр Пошта">
+                                     <option value="Кур'єр">
+                                </datalist>
+                           </div>
+                          <div class="d-flex justyfy-content-end mt-5">
+                              <button type="button" class="btn btn-primary w-100" onclick="makeOrder()">Make order</button>
+                          </div>
+                      </div>
+                  </div>
+                     
+                 </div>
+                 
+                 <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-app.js"></script>
+                 <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-firestore.js"></script>
+                 <script>
+                     const firebaseConfig = {
+                        apiKey: "AIzaSyAJkhRGSq4j-7g9EJ6gwYjQ08s2CdMGOjA",
+                        authDomain: "sl-volodya.firebaseapp.com",
+                        projectId: "sl-volodya",
+                        storageBucket: "sl-volodya.appspot.com",
+                        messagingSenderId: "465667681668",
+                        appId: "1:465667681668:web:dd2b6e3a2e276a5d5981d1",
+                        measurementId: "G-044MS52412"
+                     };
+             
+                     firebase.initializeApp(firebaseConfig);
+             
+                     var db = firebase.firestore();
+                   </script>
+            
+                 <script src="main.js"></script>
+            </body>
+            </html>
