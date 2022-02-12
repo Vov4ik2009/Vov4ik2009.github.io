@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="row">
+        <h2 class="text-center">{{product.name}}</h2>
+        <p class="d-flex justify-content-center">
+            <img :src='product.url' alt="">
+        </p>
+        <p class="d-flex justify-content-between">
+            <input 
+            class="form-control"
+            type="number"
+            v-model="product.count"
+            @change="countTotalPrice"
+             >
+            <span>Кількість</span>
+        </p>
+        <p class="d-flex justify-content-between">
+            <input 
+                type="color" 
+                class="form-control form-control-color" 
+                id="exampleColorInput" 
+                value="{{product.color}}" 
+                v-model="product.color"
+                title="Choose your color"
+                @change="countTotalPrice"
+                > 
+               
+            <label for="exampleColorInput" class="form-label"></label>
+        </p>
+        <p>
+            <input 
+            type="checkbox"
+            v-model="product.preOrder"
+            @change="countTotalPrice"
+            > Передзамолення (-5%)
+        </p>
+        <p>
+            <input 
+            type="checkbox"
+            v-model="product.delivery"
+            @change="countTotalPrice"
+            > Швидка доставка (+10%)
+        </p>
+        <p class="d-flex justify-content-between">
+           <span>Загальна вартість: </span>
+           <span>{{product.totalPrice}}$</span>
+        </p>
+        <p class="d-flex justifmy-content-end">
+            <a class="btn btn-primary">Замовити</a>
+        </p>
+    </div>
+</div>
