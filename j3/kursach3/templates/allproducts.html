@@ -1,0 +1,52 @@
+<div class="allProduct">
+    <h1 class="text-center">All products</h1>
+    <div class="d-flex flex-wrap justify-content-around mt-5">
+        <product-card 
+        v-for="product in $parent.products"
+        :product="product"
+        ></product-card>
+
+    </div>
+    <div 
+        class="modal fade" 
+        id="editModal" 
+        tabindex="-1" 
+        aria-labelledby="editModallLabel" 
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="editModalLabel">Edit Product</h5>
+              <button 
+                type="button" 
+                class="btn-close" 
+                data-bs-dismiss="modal" 
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Product name</label>
+                    <input id='edit_name'type="text" class="form-control">
+                </div> 
+                <div class="mb-3">
+                    <label class="form-label">Product price</label>
+                    <input id='edit_price' type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Product image</label>
+                    <input  id='edit_image'type="text" class="form-control">
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary"   data-bs-dismiss="modal">Close</button>
+              <button 
+                type="button" 
+                @click="saveEditedproduct"
+                data-bs-dismiss="modal"
+                class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

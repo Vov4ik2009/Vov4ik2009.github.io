@@ -1,0 +1,29 @@
+<div class="addProduct">
+    <h1 class="text-center">Add new product</h1>
+
+    <div class="add-product-form">
+        <div class="mb-3">
+            <label class="form-label">Product name</label>
+            <input type="text" class="form-control" placeholder="Product name" id="product_name" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Product logo</label>
+            <input type="text" class="form-control" placeholder="Product logo" id="product_img"required
+            v-model="$parent.newProductImage"
+            >
+        </div> 
+        <div class="mb-3">
+            <label class="form-label">Product price</label>
+            <input type="number" class="form-control" placeholder="Product price" id="product_price"required>
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-primary w-100 py-2 mb-2" @click="addProductToDB">
+                Add new product
+            </button>
+        </div>
+    </div>
+    <p align="center">
+        <img :src="$parent.newProductImage" alt="" height="200">
+    </p>
+</div>
