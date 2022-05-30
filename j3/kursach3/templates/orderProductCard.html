@@ -1,0 +1,22 @@
+<div class="card productCard">
+    <div class="row">
+        <h4 class="text-center">
+            <a @click="goToProduct(product.id)">{{product.name}}</a>
+        </h4>
+        <p class="d-flex justify-content-center">
+            <a @click="goToProduct(product.id)"><img :src="product.url" alt=""></a>
+        </p>
+        <p class="d-flex justify-content-between">
+           <span>Вартість: </span>
+           <span>{{product.price}}$</span>
+        </p>
+        <p class="d-flex justify-content-end">
+            <button 
+                class="btn btn-sm"
+                :class="{'btn-success': product.inCart, 'btn-primary': !product.inCart}"
+                @click="addToCart(product.id)">
+                {{product.inCart ? "In cart" : "Add to cart"}}
+            </button>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.card{
+    width: 24rem;
+    padding: 1rem;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+.card p{
+    font-size: 20px;
+}
+.card img{
+    height: 250px;
+    margin: 0 auto;
+}
+.card h4{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 85px; 
+}
+.card h4 a{
+    text-decoration: none;
+    color: #212529;
+}

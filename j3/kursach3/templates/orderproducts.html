@@ -1,0 +1,36 @@
+<div class="orderProducts">
+    <h1 class="text-center">Products</h1>
+
+    <div class="row align-items-end">
+        <div class="col-4"> 
+            <div class="mb-3">
+                <label class="form-label">Product name</label>
+                <input type="text" class="form-control" placeholder="Product name">
+            </div>
+        </div>
+        <div class="col-3"> 
+            <div class="mb-3">
+                <label class="form-label">Min price</label>
+                <input type="number" class="form-control" placeholder="Min price">
+            </div>
+        </div>
+        <div class="col-3"> 
+            <div class="mb-3">
+                <label class="form-label">Max price</label>
+                <input type="number" class="form-control" placeholder="Max price">
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="mb-3">
+                <button class="btn btn-primary w-100">Find</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-around mt-5">
+        <order-product-card 
+            v-for="product in $parent.products" 
+            :product="product">
+        </order-product-card>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.home_header{
+    height: 700px;
+}
+.home_header h1{
+    font-size: 5rem;
+}
+.home_header p{
+    margin-top: 30px;
+    font-size: 1.2rem;
+} 
+.theme-dark{
+    background: black;
+    color: aliceblue;
+    padding: 0;
+}   
+.theme-dark footer{
+    background: aliceblue;
+    color: black;
+}
+.theme-dark footer a{
+    background: aliceblue;
+    color: black;
+}
+.theme-dark h4{
+    color: white!important;
+}
+.theme-dark .card-container{
+    background-color: black;
+    
+}
+.theme-dark .row{
+    background-color: black;
+    
+}
+#app{
+    min-height: 100vh;
+}
