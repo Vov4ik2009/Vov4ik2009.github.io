@@ -1,0 +1,69 @@
+<div class="myorders">
+    <h1 class="text-center">All Orders</h1>
+
+    <div class="d-flex flex-wrap justify-content-around mt-5" v-if="$root.adminOrders.length > 0">
+      <table class="table ">
+        <thead>
+          <tr class="text-center">
+            <th scope="col">№</th>
+            <th scope="col">Products</th>
+            <th scope="col" style="min-width:100px">Total Price</th>
+            <th scope="col">Status</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+
+          </tr>
+        </thead>
+        <tbody>
+            <tr v-for="(orderData, idx) in $root.adminOrders" class="text-center">
+              <th scope="row">{{ idx + 1 }}</th>
+              <th scope="row" class="d-flex flex-wrap justify-content-around" style="max-width: 950px;" >
+                
+                <p class="text-center mx-2" v-for="product in orderData.order.products">
+                  <img :src="product.url" height="100">
+                  <br>
+                  <span class='text'style="display:block; max-width: 180px; text-overflow: ellipsis; 
+                    overflow: hidden;
+                    height: 70px;
+                  ">{{product.name}} ({{product.count}})
+                </span>
+                  <br>
+                  ${{product.price}}
+                </p>
+  
+              </th>
+              <th scope="row"> ${{ orderData.order.sum }}</th>
+              <th scope="row">
+                <span 
+                class="badge p-2 text-uppercase"
+                :class="{ 
+                  'bg-warning': orderData.status == 'pending', 
+                  'bg-primary': orderData.status == 'sended',
+                  'bg-success': orderData.status == 'done',
+                  'bg-danger': orderData.status == 'failed',
+                }"
+                style="width: 80px"
+                >
+                {{ orderData.status }}
+              </span>
+              </th>
+              <th scope="col">
+                <select 
+                class="form-select form-select-sm" 
+                v-model="orderData.status" 
+                @change="changeStatus(orderData.status, orderData.id)"
+              >
+                <option value="pending">Pending</option>
+                <option value="sended">Sended</option>
+                <option value="done">Done</option>
+                <option value="failed">Failed</option>
+              </select>
+              </th>
+              <th scope="col">
+                <button class="btn btn-danger btn-sm" @click="deleteOrder(orderData.id)">delete</button>              
+              </th>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+</div>

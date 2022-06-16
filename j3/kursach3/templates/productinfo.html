@@ -1,0 +1,17 @@
+<div class="productInfo">
+    <h1 class="my-5 text-center">{{$root.productInfo.name}}</h1>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="photo in $root.productInfo.photos" >
+            <img :src="photo" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    <h1 align="right">{{$root.productInfo.price}}$</h1>
+</div>
+<p>Про Товар</p>
+<hr style="color:black ;">
+<div v-html="$root.productInfo.description"></div>

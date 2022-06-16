@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.home_header{
+    height: 700px;
+}
+.home_header h1{
+    font-size: 5rem;
+}
+.home_header p{
+    margin-top: 30px;
+    font-size: 1.2rem;
+} 
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    background: black;
+    padding: 100px 6vw;
+    box-sizing: border-box;
+}
+.footer_menu{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+.menu_box a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 15px 0;
+}
+.footer_rights h2{
+    font-size: 2.2rem;
+    margin-top: 5px;
+}
+.theme-dark{
+    background: black;
+    color: aliceblue;
+    padding: 0;
+}   
+.theme-dark footer{
+    background: rgb(80, 92, 101);
+    color: black;
+}
+.theme-dark footer a{
+    background: rgb(80, 92, 101);
+    color: black;
+}
+.theme-dark h4{
+    color: white!important;
+}
+.theme-dark .card-container{
+    background-color: black;
+    
+}
+.theme-dark .row{
+    background-color: black;
+    
+}
+.theme-dark .text{
+ color: white!important; 
+}
+.theme-dark .table{
+    color: white!important; 
+}
+.theme-dark .card{
+    background-color: black; 
+}
+.modal-body{
+    color:black
+}
+.modal-title{
+    color:black
+}
+.theme-dark hr{
+    background-color: white;
+}
+.theme-dark .swiper-slide{
+    background-color: black;
+}
+
+#app{
+    min-height: 100vh;
+}
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-right: 10px;
+}

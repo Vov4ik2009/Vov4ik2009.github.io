@@ -1,0 +1,40 @@
+<div class="orderProducts">
+    <h1 class="text-center">Products</h1>
+
+    <div class="row align-items-end mx-0">
+        <div class="col-4"> 
+            <div class="mb-3">
+                <label class="form-label" >Product name</label>
+                <input type="text" class="form-control" placeholder="Product name" v-model="$root.filter.name">
+            </div>
+        </div>
+        <div class="col-3"> 
+            <div class="mb-3">
+                <label class="form-label" >Min price</label>
+                <input type="number" class="form-control" placeholder="Min price" v-model="$root.filter.minPrice">
+            </div>
+        </div>
+        <div class="col-3"> 
+            <div class="mb-3">
+                <label class="form-label">Max price</label>
+                <input type="number" class="form-control" placeholder="Max price" v-model="$root.filter.maxPrice">
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="mb-3">
+                <button class="btn btn-primary w-100" @click="filter()">Find</button>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center" v-if="$parent.products.length == 0">
+        Sorry there are no products with that filter 🤦
+    </h2>
+
+    <div class="d-flex flex-wrap justify-content-around mt-5">
+        <order-product-card 
+            v-for="product in $parent.products" 
+            :product="product">
+        </order-product-card>
+    </div>
+</div>

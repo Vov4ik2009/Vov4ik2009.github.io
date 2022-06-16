@@ -1,0 +1,23 @@
+<div class="card productCard">
+    <div class="row">
+        <h4 class="text-center">{{product.name}}</h4>
+        <p class="d-flex justify-content-center">
+            <img :src="product.url" alt="">
+        </p>
+        <p class="d-flex justify-content-between">
+           <span>Вартість: </span>
+           <span>{{product.price}}$</span>
+        </p>
+        <p class="d-flex justify-content-between">
+            <button class="btn btn-danger btn-sm" @click="deleteProduct(product.id)">
+                Delete
+            </button>
+            <button 
+                class="btn btn-primary btn-sm px-3" 
+                @click="editProduct(product.id)" 
+                data-bs-toggle="modal" data-bs-target="#editModal">
+                Edit
+            </button>
+        </p>
+    </div>
+</div>
